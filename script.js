@@ -3,7 +3,7 @@ async function wetherDataFetch() {
     try {
         let cityName = document.getElementById("EnterCityName").value;
         let response = await fetch(
-            `https://api.weatherapi.com/v1/current.json?key=63c9bdb635dd496fbd085858242209&q= ${cityName}`
+            `https://api.weatherapi.com/v1/current.json?key=API_KEY&q= ${cityName}`
         );
         const data = await response.json();
         console.log(data);
